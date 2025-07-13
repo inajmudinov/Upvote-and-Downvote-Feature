@@ -1,13 +1,18 @@
-var counter = 101000;
+// script.js
+
+let votes = 0;
 
 function upvote() {
- counter  = counter + 1;
-
- document.getElementById("votes").innerHTML = counter + " votes";
+  votes++;
+  updateDisplay();
 }
 
 function downvote() {
- counter  = counter - 1;
+  votes--;
+  updateDisplay();
+}
 
- document.getElementById("votes").innerHTML = counter + " votes";
+function updateDisplay() {
+  const result = document.getElementById("result");
+  result.textContent = `Votes: ${votes}`;
 }
