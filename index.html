@@ -1,67 +1,15 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upvote & Downvote</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .vote-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      flex: 1 1 45%;
-    }
-
-    @media (max-width: 480px) {
-      .vote-buttons {
-        flex-direction: column;
-      }
-
-      button {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Vote for Programmer of the Year</h1>
-    <div class="vote-buttons">
-      <button onclick="upvote()">👍 Upvote</button>
-      <button onclick="downvote()">👎 Downvote</button>
-    </div>
-    <p id="result">Votes: 0</p>
-  </div>
-
-  <script>
-    let votes = 0;
-    function upvote() {
-      votes++;
-      document.getElementById("result").textContent = `Votes: ${votes}`;
-    }
-    function downvote() {
-      votes--;
-      document.getElementById("result").textContent = `Votes: ${votes}`;
-    }
-  </script>
-</body>
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h1>Programmer of the year</h1>
+  <img class="filtered" src="https://i.ibb.co/qB1fqgN/me.png" alt="me">
+  <p><em>Code everyday !</em></p>
+  <p id="votes">101000 votes</p>
+  <button id="upvote" onclick="upvote()">Upvote</button>
+  <button id="downvote" onclick="downvote()">Downvote</button>
+  <script src="script.js"></script>
+ </body>
 </html>
