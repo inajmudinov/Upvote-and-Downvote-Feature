@@ -5,12 +5,12 @@ body {
 
 .filtered {
   width: 100%;
-  max-width: 200px; /* or any size you want */
-  height: auto;
-  border-radius: 50%; /* makes it round */
-  object-fit: cover; /* keeps image proportions */
+  max-width: 200px;
+  aspect-ratio: 1 / 1;       /* Makes it always square */
+  border-radius: 50%;
+  object-fit: cover;
   display: block;
-  margin: 0 auto; /* centers the image */
+  margin: 0 auto;
 }
 
 h1 {
