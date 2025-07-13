@@ -4,11 +4,13 @@ body {
 }
 
 .filtered {
- border-radius:auto%;
- max-width:auto%;
- height:auto;
- border:1px solid cyan;
-// filter: grayscale(100%);
+  width: 100%;
+  max-width: 200px; /* or any size you want */
+  height: auto;
+  border-radius: 50%; /* makes it round */
+  object-fit: cover; /* keeps image proportions */
+  display: block;
+  margin: 0 auto; /* centers the image */
 }
 
 h1 {
