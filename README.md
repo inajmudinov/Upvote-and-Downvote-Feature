@@ -15,3 +15,6 @@ This repository contains a voting feature that allows users to upvote or downvot
 This feature is developed specifically for platforms or contests that aim to nominate and recognize top programming talent. It provides an intuitive and interactive way to collect feedback from the community.
 
 ## 📁 Project Structure
+
+upvote-downvote-feature/ ├── backend/              # Optional backend service (Node/Python/etc.) ├── frontend/             # UI code (HTML/CSS/JS or React/Vue) ├── README.md             # Project documentation ├── LICENSE └── ...
+
